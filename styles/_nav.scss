@@ -1,0 +1,19 @@
+.nav {
+    ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    li {
+        padding: 15px;
+        font-weight: bold;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+    li:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,64 @@
+@use 'fonts';
+@import 'header';
+@import 'nav';
+
+body {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    font-family: fonts.$mainfont;
+    color: #111111;
+}
+
+.main__box {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 4.5fr 1fr 2fr;
+    margin: 30px 0px;
+}
+
+
+
+.main__box1__text--start {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.423077px;
+    color: #4A4FF2;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+h1 {
+    font-size: fonts.$h1fontsize;
+    font-weight: fonts.$h1fontweight;
+    line-height: fonts.$h1lineheight;
+    grid-area: 2 / 1 / 4 / 2;
+    
+    
+    .blue {
+        color: #4A4FF2;
+    
+    }
+}
+
+.rectangle {
+    width: 30px;
+    height: 2px;
+    background: #111111;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    grid-area: 3 / 3 / 4 / 4;
+    
+}
+
+.main__box1__text--vision {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    grid-area: 3 / 3 / 4 / 4;
+   
+}
