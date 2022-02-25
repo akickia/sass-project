@@ -1,0 +1,62 @@
+@use 'fonts';
+@import 'header';
+@import 'nav';
+@import 'footer';
+
+
+body {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    font-family: fonts.$mainfont;
+    color: fonts.$fontcolor;
+}
+
+.main__box  {
+    p {
+        font-size: fonts.$pfontsize;
+        line-height: fonts.$plineheight;
+    }
+}
+
+.main__box1 {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    .main__box1--text {
+        max-width: 635px;
+        width: 100%;
+    }
+    .main__box1--heading {
+        max-width: 495px;
+        width: 100%;
+        font-size: fonts.$h1fontsize;
+        line-height: fonts.$h1lineheight;
+        font-weight: fonts.$hfontweight;
+    }
+    table {
+        min-width: 335px;
+        width: 100%;
+        min-height: 343px;
+        font-size: fonts.$h6fontsize;
+        line-height: fonts.$h6lineheight;
+        .bold {
+            font-weight: bold;
+        }        
+        .regular {
+            opacity: 0.5;
+        }
+    }
+}
+
+.main__box2 {
+    .main__box2--text {
+        padding: 45px 0;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+    .main__box2--images {
+        display: flex;
+        justify-content: space-between;
+    }
+}

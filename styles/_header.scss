@@ -1,6 +1,11 @@
+@import 'nav';
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
+    .header__logo:hover {
+        transform: scale(1.3);
+    }
 }

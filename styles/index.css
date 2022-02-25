@@ -1,23 +1,265 @@
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  padding-inline-start: 0;
+}
+.nav li {
+  padding: 15px;
+}
+.nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.346154px;
+  color: #111111;
+}
+.nav li:hover {
+  text-decoration: underline;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 60px;
 }
+header .header__logo:hover {
+  transform: scale(1.3);
+}
 
 .nav ul {
   list-style-type: none;
   display: flex;
+  padding-inline-start: 0;
 }
 .nav li {
   padding: 15px;
-  font-weight: bold;
 }
 .nav a {
   text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.346154px;
+  color: #111111;
 }
 .nav li:hover {
   text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0 30px 0;
+}
+footer .footer__nav {
+  display: flex;
+  justify-content: flex-start;
+}
+footer .footer__nav-icons {
+  display: flex;
+  max-width: 353px;
+  width: 100%;
+  justify-content: space-between;
+}
+footer .footer__logo:hover {
+  transform: scale(1.3);
+}
+footer .footer__icons {
+  display: flex;
+  align-items: center;
+}
+footer .footer__icons a:hover {
+  transform: scale(1.2);
+}
+
+.main__box1 {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 4.5fr 1fr 2fr;
+  margin: 30px 0px;
+}
+.main__box1 .main__box1__text--start {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.423077px;
+  color: #4A4FF2;
+  grid-area: 1/1/2/2;
+}
+.main__box1 h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 55px;
+  grid-area: 2/1/4/2;
+}
+.main__box1 h1 .blue {
+  color: #4A4FF2;
+}
+.main__box1 .rectangle {
+  width: 30px;
+  height: 2px;
+  background: #111111;
+  opacity: 0.5;
+  grid-area: 3/3/4/4;
+}
+.main__box1 .main__box1__text--vision {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 23px;
+  opacity: 0.6;
+  grid-area: 3/3/4/4;
+}
+
+.main__box2 {
+  display: grid;
+  grid-template-rows: 17% 2.2% 8% 7.8% 5.3% 5.1% 14% 2% 8.2% 17%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1%;
+  justify-items: center;
+}
+.main__box2 .pic1 {
+  grid-area: 1/1/3/2;
+}
+.main__box2 .pic2 {
+  grid-area: 1/2/2/3;
+}
+.main__box2 .pic3 {
+  grid-area: 1/3/4/4;
+}
+.main__box2 .pic4 {
+  grid-area: 3/1/6/2;
+}
+.main__box2 .pic5 {
+  grid-area: 2/2/5/3;
+}
+.main__box2 .pic6 {
+  grid-area: 4/3/7/4;
+}
+.main__box2 .pic7 {
+  grid-area: 6/1/9/2;
+}
+.main__box2 .pic8 {
+  grid-area: 5/2/8/3;
+}
+.main__box2 .pic9 {
+  grid-area: 7/3/10/4;
+}
+.main__box2 .pic10 {
+  grid-area: 9/1/11/2;
+}
+.main__box2 .pic11 {
+  grid-area: 8/2/11/3;
+}
+.main__box2 .pic12 {
+  grid-area: 10/3/11/4;
+}
+
+.main__box3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__box3 .main__box3--heading {
+  max-width: 635px;
+  width: 100%;
+}
+.main__box3 h3 {
+  font-size: 28px;
+  line-height: 38px;
+}
+.main__box3 .main__box3__text--small {
+  max-width: 350px;
+  width: 100%;
+  height: 106px;
+  font-size: 18px;
+  line-height: 23px;
+  opacity: 0.6;
+}
+.main__box3 a {
+  text-decoration: none;
+  color: #111111;
+}
+.main__box3 a a:hover {
+  text-decoration: underline;
+}
+
+.main__box--awards {
+  margin-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-width: 2px;
+  border-color: #D8D8D8;
+  border-top-style: solid;
+  display: grid;
+  grid-template-rows: 60% 60%;
+  grid-template-columns: 2.5fr 1.5fr 1fr 0.7fr;
+  gap: 10px;
+}
+.main__box--awards .main__awards--heading {
+  position: relative;
+  bottom: 18px;
+  font-size: 22px;
+  line-height: 28px;
+}
+.main__box--awards .main__awards--heading .main__awards--heading1 {
+  grid-area: 1/1/2/2;
+}
+.main__box--awards .main__awards--heading .main__awards--heading2 {
+  grid-area: 2/1/3/2;
+}
+.main__box--awards .main__awards--award-name {
+  position: relative;
+  bottom: 28px;
+}
+.main__box--awards .main__awards--award-name h6 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+.main__box--awards .main__awards--award-name .main__awards--award-name1 {
+  grid-area: 1/2/2/3;
+}
+.main__box--awards .main__awards--award-name .main__awards--award-name2 {
+  grid-area: 2/2/3/3;
+}
+.main__box--awards .main__awards--definition {
+  max-width: 185px;
+  width: 100%;
+  font-size: 16px;
+}
+.main__box--awards .main__awards--definition .overflow {
+  visibility: hidden;
+}
+.main__box--awards .main__awards--definition .main__awards--definition1 {
+  grid-area: 1/3/2/4;
+}
+.main__box--awards .main__awards--definition .main__awards--definition2 {
+  grid-area: 2/3/2/4;
+}
+.main__box--awards .main__awards--definition .definition__heading {
+  line-height: 20px;
+}
+.main__box--awards .main__awards--definition .definition__text {
+  opacity: 0.6;
+  line-height: 26px;
+}
+.main__box--awards .main__awards--year {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  line-height: 20px;
+}
+.main__box--awards .main__awards--year .main__awards--year1 {
+  grid-area: 1/4/2/5;
+}
+.main__box--awards .main__awards--year .main__awards--year2 {
+  grid-area: 2/4/3/5;
+}
+.main__box--awards .main__awards--year .main__box--awards5 {
+  border-bottom-style: solid;
 }
 
 body {
@@ -26,50 +268,4 @@ body {
   margin: auto;
   font-family: "Mulish", sans-serif;
   color: #111111;
-}
-
-.main__box {
-  display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
-  grid-template-columns: 4.5fr 1fr 2fr;
-  margin: 30px 0px;
-}
-
-.main__box1__text--start {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 28px;
-  letter-spacing: -0.423077px;
-  color: #4A4FF2;
-  grid-area: 1/1/2/2;
-}
-
-h1 {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 55px;
-  grid-area: 2/1/4/2;
-}
-h1 .blue {
-  color: #4A4FF2;
-}
-
-.rectangle {
-  width: 30px;
-  height: 2px;
-  background: #111111;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  grid-area: 3/3/4/4;
-}
-
-.main__box1__text--vision {
-  font-style: italic;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 23px;
-  mix-blend-mode: normal;
-  opacity: 0.6;
-  grid-area: 3/3/4/4;
 }

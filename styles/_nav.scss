@@ -1,16 +1,23 @@
+@use 'fonts';
+
 .nav {
     ul {
         list-style-type: none;
         display: flex;
+        padding-inline-start: 0;
     }
 
     li {
         padding: 15px;
-        font-weight: bold;
     }
-    
+
     a {
         text-decoration: none;
+        font-weight: fonts.$hfontweight;
+        font-size: fonts.$h6fontsize;
+        line-height: fonts.$h6lineheight;
+        letter-spacing: -0.346154px;
+        color: fonts.$fontcolor;
     }
 
     li:hover {

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1aafbbb739.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/contact.scss">
+    <link rel="stylesheet" href="../styles/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <body>
 
     <header>
-        <img class="header__logo logo" src="../images/Logo.svg">
+        <a href="../index.html"><img class="header__logo logo" src="../images/Logo.svg"></a>
         <nav class="header__nav nav">
             <ul>
                 <li><a href="projects.html">Projects</a></li>
@@ -30,12 +30,15 @@
                 <h1 class="main__box1--heading">Full set of great
                     features to make your
                     product fresh</h1>
-                <p class="main__box--text">Our favorite brands are our friends! We help them to achieve their goals, they help us to stay sharp.</p>
+                <p class="main__box1--text">Our favorite brands are our friends! We help them to achieve their goals, they help us to stay sharp.</p>
             </div>
             <div class="main__box1--form">
-                <form action="">
-                    <input>
-                </form>
+                    <form action="submit">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required minlength="6">
+                        <input type="text" name="message" id="message" placeholder="Message"  required maxlength="200">
+                        <button type="submit">Submit</button>
+                    </form>
             </div>
         </div>
         <div class="main__box main__box2">
@@ -44,17 +47,17 @@
     </main>
 
     <footer>
-        <img class="footer__logo logo" src="images/Logo.svg">
-        <nav class="footer__nav nav">
-            <ul>
-                <li><a href="../pages/projects.html">Projects</a></li>
-                <li><a href="../pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="footer__icons">
-            <i class="fa-brands fa-dribbble"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
+        <a href="../index.html"><img class="footer__logo logo" src="../images/Logo.svg"></a>
+        <div class="footer__nav-icons">
+            <nav class="footer__nav nav">
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer__icons">
+                <a href="http://instagram.se" target="_blank"><img src="../images/Social.png"></a>
+            </div>
         </div>   
     </footer>
     
